@@ -1,338 +1,1399 @@
 <!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Gabriel Chouchane | Speaker. Podcast Host. AI Strategist.</title>
+  <meta name="description" content="Gabriel Chouchane — Speaker, podcast host, and AI strategist. I help companies tell their story through podcasts and navigate AI adoption through talks and hands-on strategy." />
+  <meta property="og:title" content="Gabriel Chouchane | Speaker. Podcast Host. AI Strategist." />
+  <meta property="og:description" content="Speaker, podcast host, and AI strategist. I help companies tell their story through podcasts and navigate AI adoption through talks and hands-on strategy." />
+  <meta property="og:type" content="website" />
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Gabriel Chouchane | Speaker. Strategist. Builder.</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-secondary-container": "#506e0c",
-                      "tertiary": "#006e21",
-                      "secondary-container": "#caf082",
-                      "error-container": "#ffdad6",
-                      "surface-container-high": "#e6ead6",
-                      "background": "#f8fbe7",
-                      "on-primary": "#ffffff",
-                      "tertiary-fixed-dim": "#3be35a",
-                      "primary-fixed-dim": "#9dd900",
-                      "on-primary-fixed-variant": "#364e00",
-                      "surface": "#f8fbe7",
-                      "surface-container-highest": "#e1e5d0",
-                      "secondary-fixed": "#caf082",
-                      "on-tertiary-container": "#006b20",
-                      "on-surface": "#191d11",
-                      "secondary-fixed-dim": "#afd36a",
-                      "on-error-container": "#93000a",
-                      "surface-container": "#ecf0db",
-                      "surface-bright": "#f8fbe7",
-                      "on-surface-variant": "#434934",
-                      "surface-variant": "#e1e5d0",
-                      "outline-variant": "#c2caae",
-                      "tertiary-fixed": "#6eff7c",
-                      "on-primary-fixed": "#131f00",
-                      "inverse-surface": "#2e3224",
-                      "on-tertiary-fixed": "#002105",
-                      "surface-dim": "#d8dcc8",
-                      "on-secondary": "#ffffff",
-                      "primary-container": "#a9e80e",
-                      "tertiary-container": "#4ef267",
-                      "surface-container-lowest": "#ffffff",
-                      "secondary": "#4a6704",
-                      "on-primary-container": "#476500",
-                      "inverse-on-surface": "#eff3de",
-                      "on-tertiary": "#ffffff",
-                      "outline": "#737a62",
-                      "primary-fixed": "#b6f627",
-                      "error": "#ba1a1a",
-                      "surface-tint": "#496800",
-                      "primary": "#496800",
-                      "on-error": "#ffffff",
-                      "on-tertiary-fixed-variant": "#005317",
-                      "on-secondary-fixed-variant": "#364e00",
-                      "inverse-primary": "#9dd900",
-                      "surface-container-low": "#f2f6e1",
-                      "on-secondary-fixed": "#131f00",
-                      "on-background": "#191d11"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.25rem",
-                      "lg": "0.5rem",
-                      "xl": "0.75rem",
-                      "full": "9999px"
-              },
-              "fontFamily": {
-                      "headline": ["Inter"],
-                      "body": ["Inter"],
-                      "label": ["Inter"]
-              }
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lime': {
+              300: '#d4f97f',
+              400: '#a9e80e',
+              500: '#a6e505',
+              600: '#628121',
+              700: '#496800',
+              800: '#364e00',
+              900: '#131f00',
             },
+            'cream': {
+              50: '#FFFBF5',
+              100: '#FFF7ED',
+              200: '#F5EDE3',
+              300: '#EBE3D9',
+              400: '#DED6CC',
+              500: '#B8B0A6',
+              600: '#6B6560',
+              700: '#3D3833',
+              800: '#2C2825',
+              900: '#1A1715',
+            },
+            'dark': {
+              700: '#2e3224',
+              800: '#232718',
+              900: '#191d11',
+            }
           },
-        }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .hide-scrollbar::-webkit-scrollbar { display: none; }
-        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        .glass-nav {
-            backdrop-filter: blur(24px);
-        }
-        .text-gradient-lime {
-            background: linear-gradient(135deg, #a6e505 0%, #628121 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .bg-gradient-lime {
-            background: linear-gradient(135deg, #a6e505 0%, #628121 100%);
-        }
-    </style>
+          fontFamily: {
+            'display': ['Outfit', 'sans-serif'],
+            'body': ['Space Grotesk', 'sans-serif'],
+          }
+        },
+      },
+    }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    /* Glow buttons */
+    .btn-glow {
+      background: #a6e505;
+      color: #131f00;
+      box-shadow: 0 0 20px rgba(166, 229, 5, 0.4), 0 0 60px rgba(166, 229, 5, 0.15);
+      transition: all 0.3s ease;
+    }
+    .btn-glow:hover {
+      box-shadow: 0 0 30px rgba(166, 229, 5, 0.6), 0 0 80px rgba(166, 229, 5, 0.25);
+      transform: translateY(-2px);
+    }
+    .btn-glow:active {
+      transform: translateY(0);
+    }
+
+    .btn-outline {
+      border: 2px solid rgba(194, 202, 174, 0.4);
+      color: #434934;
+      transition: all 0.3s ease;
+    }
+    .btn-outline:hover {
+      background: rgba(166, 229, 5, 0.08);
+      border-color: rgba(166, 229, 5, 0.5);
+    }
+
+    /* Carousel */
+    .carousel-track {
+      display: flex;
+      gap: 1.25rem;
+      transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+      will-change: transform;
+    }
+    .carousel-track.dragging {
+      transition: none;
+    }
+    .carousel-track.auto-scrolling {
+      transition: transform 30s linear;
+    }
+
+
+    /* Hide scrollbar */
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* Tab active state */
+    .tab-item {
+      border-left: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+    .tab-item.active {
+      border-left-color: #a6e505;
+      background: rgba(166, 229, 5, 0.12);
+    }
+    .tab-item:not(.active):hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    /* YouTube embed placeholder */
+    .yt-placeholder {
+      position: relative;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .yt-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(166,229,5,0.05) 0%, transparent 60%);
+    }
+    .yt-play-btn {
+      width: 64px;
+      height: 64px;
+      background: rgba(166, 229, 5, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 30px rgba(166, 229, 5, 0.3);
+    }
+    .yt-play-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 40px rgba(166, 229, 5, 0.5);
+    }
+    .yt-play-btn .material-symbols-outlined {
+      font-size: 32px;
+      color: #131f00;
+      font-variation-settings: 'FILL' 1;
+    }
+
+    /* Short-form placeholder */
+    .short-placeholder {
+      background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .short-placeholder::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    }
+
+    /* Nav glassmorphism */
+    .nav-glass {
+      background: rgba(255, 251, 245, 0.75);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: all 0.3s ease;
+    }
+    .nav-glass.scrolled {
+      background: rgba(255, 251, 245, 0.92);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    .mobile-menu.open {
+      max-height: 320px;
+    }
+
+    /* Dot indicators */
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(194, 202, 174, 0.4);
+      transition: all 0.3s ease;
+    }
+    .dot.active {
+      background: #a6e505;
+      width: 24px;
+      border-radius: 4px;
+    }
+
+    /* Section fade-in on scroll */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Card hover */
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    /* TEDx badge pulse */
+    @keyframes subtle-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(166, 229, 5, 0.3); }
+      50% { box-shadow: 0 0 0 8px rgba(166, 229, 5, 0); }
+    }
+    .tedx-pulse {
+      animation: subtle-pulse 3s ease-in-out infinite;
+    }
+
+    /* Logo slider */
+    @keyframes logo-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .logo-slider-track {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      width: max-content;
+      animation: logo-scroll 30s linear infinite;
+    }
+    .logo-slider-track:hover {
+      animation-play-state: paused;
+    }
+    .logo-slider-track img {
+      height: 28px;
+      width: auto;
+      object-fit: contain;
+      filter: grayscale(100%) brightness(0.55) contrast(1.1);
+      opacity: 0.6;
+      mix-blend-mode: multiply;
+      transition: all 0.3s ease;
+    }
+    .logo-slider-track img:hover {
+      filter: grayscale(100%) brightness(0.4) contrast(1.2);
+      opacity: 0.85;
+    }
+    /* Deep dive sidebar */
+    .deep-dive-sidebar {
+      max-height: 480px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(166, 229, 5, 0.3) transparent;
+    }
+    .deep-dive-sidebar::-webkit-scrollbar {
+      width: 4px;
+    }
+    .deep-dive-sidebar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .deep-dive-sidebar::-webkit-scrollbar-thumb {
+      background: rgba(166, 229, 5, 0.3);
+      border-radius: 4px;
+    }
+    .deep-dive-sidebar::-webkit-scrollbar-thumb:hover {
+      background: rgba(166, 229, 5, 0.5);
+    }
+    /* Deep dive cards */
+    .deep-dive-card {
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+    }
+    .deep-dive-card:hover {
+      border-color: rgba(166, 229, 5, 0.3);
+    }
+    .deep-dive-card.active {
+      border-color: #a6e505;
+      background: rgba(166, 229, 5, 0.06);
+    }
+
+    .logo-slider-track img.logo-square {
+      height: 56px;
+    }
+
+    /* Glass morphism for event cards */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .glass-card-light {
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    /* Mirror/glass effect for TEDx panel */
+    .tedx-glass {
+      background: linear-gradient(135deg, rgba(30, 30, 30, 0.95) 0%, rgba(20, 20, 20, 0.85) 50%, rgba(30, 30, 30, 0.95) 100%);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.05),
+        0 0 80px rgba(166, 229, 5, 0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .tedx-glass::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(165deg, rgba(255,255,255,0.07) 0%, transparent 40%, transparent 60%, rgba(255,255,255,0.03) 100%);
+      pointer-events: none;
+    }
+    .tedx-glass::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at 25% 25%, rgba(166,229,5,0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    /* Event card redesign */
+    .event-card {
+      background: linear-gradient(145deg, #ffffff 0%, #faf7f2 100%);
+      border: 1px solid rgba(235, 227, 217, 0.6);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06), 0 8px 40px rgba(0, 0, 0, 0.04);
+      transition: all 0.3s ease;
+    }
+    .event-card:hover {
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1), 0 16px 60px rgba(0, 0, 0, 0.06);
+      transform: translateY(-2px);
+    }
+
+    /* Sound waveform animation */
+    @keyframes waveform-drift-right {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    @keyframes waveform-drift-left {
+      0% { transform: translateX(-50%); }
+      100% { transform: translateX(0); }
+    }
+    .waveform-container {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .waveform-container svg {
+      position: absolute;
+      width: 200%;
+      height: 100%;
+    }
+    .waveform-line {
+      fill: none;
+      stroke-linecap: round;
+    }
+    .waveform-layer-1 {
+      animation: waveform-drift-right 25s linear infinite;
+    }
+    .waveform-layer-2 {
+      animation: waveform-drift-left 35s linear infinite;
+    }
+    .waveform-layer-3 {
+      animation: waveform-drift-right 30s linear infinite;
+    }
+
+    /* Glossy lime frame for Quick Insights */
+    .glossy-frame {
+      position: relative;
+      padding: 3px;
+      border-radius: 1.125rem;
+      background: linear-gradient(145deg, rgba(166,229,5,0.7), rgba(166,229,5,0.2) 40%, rgba(166,229,5,0.5) 60%, rgba(166,229,5,0.15));
+      box-shadow:
+        0 0 20px rgba(166,229,5,0.15),
+        0 0 40px rgba(166,229,5,0.05),
+        inset 0 1px 0 rgba(255,255,255,0.2);
+    }
+    .glossy-frame > div {
+      border-radius: calc(1.125rem - 3px);
+    }
+
+    /* Grain texture overlay */
+    .grain::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+  </style>
 </head>
-<body class="bg-surface text-on-surface font-body selection:bg-primary-container/30">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-stone-200/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_10px_40px_-10px_rgba(62,66,54,0.06)] font-['Inter'] text-sm tracking-tight leading-relaxed">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="text-xl font-bold tracking-tighter text-stone-800 dark:text-stone-100">Gabriel Chouchane</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="text-stone-900 dark:text-stone-50 font-semibold border-b-2 border-lime-500 hover:opacity-80 transition-all duration-300" href="#">Work</a>
-<a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:opacity-80 transition-all duration-300" href="#">Expertise</a>
-<a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:opacity-80 transition-all duration-300" href="#">Speaking</a>
-<a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:opacity-80 transition-all duration-300" href="#">Contact</a>
-<button class="bg-gradient-lime text-white px-6 py-2 rounded-lg font-semibold scale-95 active:scale-90 transition-transform">Hire Me</button>
-</div>
-<button class="md:hidden text-on-surface">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</nav>
-<main class="pt-24">
-<!-- Hero Section -->
-<section class="max-w-7xl mx-auto px-8 py-20 md:py-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-7">
-<h2 class="text-on-surface-variant font-label uppercase tracking-widest text-sm mb-4">Speaker. Strategist. Builder.</h2>
-<h1 class="text-7xl md:text-8xl font-black tracking-tighter leading-none mb-8 text-on-surface">Gabriel<br/>Chouchane</h1>
-<p class="text-xl md:text-2xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
-                    I help companies understand and adopt AI, building bridges between bleeding-edge technology and real-world strategy.
-                </p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-gradient-lime text-on-primary px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:translate-y-[-2px] transition-all">
-                        Watch My Content
-                    </button>
-<button class="px-8 py-4 rounded-lg font-bold text-lg border-2 border-outline-variant/30 hover:bg-surface-container-low transition-all">
-                        Get in Touch
-                    </button>
-</div>
-</div>
-<div class="lg:col-span-5 relative">
-<div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-surface-container-low rotate-3 hover:rotate-0 transition-transform duration-700">
-<img alt="Gabriel Chouchane" class="w-full h-full object-cover" data-alt="professional high-end portrait of a charismatic male strategist in a minimal studio setting, soft cinematic lighting, neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnCwDyPNB9BuRoDFJ5zwFodJLFtv1Q6YO5chVTFygpvDJuD46XUTl6IbqrB-uuL4sdQLOESK89WcjXEKuqLem8ylDWzdJzfXPkwKtLoIEjC4yJv6-JN0vfw0DRrR_85BMRVOynbFopcQAMAKYwWJduEH6WUHoUCE4D_imd0tiZkUneBzPEDfirQhf7ZOMb9L_vwpz0V1oQLM846otZb_6_W892FHYGxjG1Ot3RBVMUhs7WyV3QwpPK_4qjmviKCVPbqgCnD19xKhEy"/>
-</div>
-<div class="absolute -bottom-6 -left-6 bg-primary-container p-6 rounded-2xl shadow-xl -rotate-6">
-<span class="material-symbols-outlined text-4xl text-on-primary-container" style="font-variation-settings: 'FILL' 1;">bolt</span>
-</div>
-</div>
-</section>
-<!-- Quick Insights: Carousel -->
-<section class="bg-surface-container-low py-24 overflow-hidden">
-<div class="max-w-7xl mx-auto px-8 mb-12 flex justify-between items-end">
-<div>
-<h3 class="text-4xl font-bold tracking-tight mb-2">Quick Insights</h3>
-<p class="text-on-surface-variant">The future of AI, explained in 60 seconds.</p>
-</div>
-<div class="flex gap-2">
-<button class="p-3 rounded-full bg-surface-container-lowest shadow-sm hover:bg-primary-container transition-colors">
-<span class="material-symbols-outlined">arrow_back</span>
-</button>
-<button class="p-3 rounded-full bg-surface-container-lowest shadow-sm hover:bg-primary-container transition-colors">
-<span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-<div class="flex gap-6 overflow-x-auto px-8 md:px-[calc((100vw-80rem)/2+2rem)] hide-scrollbar snap-x">
-<!-- Short 1 -->
-<div class="flex-none w-72 aspect-[9/16] bg-surface-container-highest rounded-2xl relative group overflow-hidden snap-start">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="vibrant abstract 3d digital landscape showing neural networks and data flow in neon lime and charcoal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtv6_5Za-_-k-NtPvsgQVJp7JgcvaiXecRlwB8-yNCZSD00bjMki23ZqXVQSNNEmw6ADLAOr4NPtvwWBKj56yC-x6Qz6HI1K-Mln6AiLQxW2YsOR3LE8fxWN9QgKI_T0Y_FhhLWiPfZcGvs_ormjSyouX8mcmlwqqxgpa0udl6gRCtMWJyvNQUn54ApDSLSZMRpWf_HXCmz42p_D6FVUNz8CpO2jXoYf5gLmv3KwysHpRaSg6cXkISLiCb1SbMD_KCmiIFJpPyR2SG"/>
-<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent p-6 flex flex-col justify-end">
-<span class="text-primary font-bold text-xs uppercase tracking-widest mb-1">AI Strategy</span>
-<h4 class="text-white font-semibold leading-tight">Why LLMs aren't search engines.</h4>
-</div>
-</div>
-<!-- Short 2 -->
-<div class="flex-none w-72 aspect-[9/16] bg-surface-container-highest rounded-2xl relative group overflow-hidden snap-start">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close up of a modern laptop screen displaying complex code and data visualizations in a dark room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxC8eHNnFnPz94hXcbdJ4FMCYq1hFxMxHKAhuKDQASvGh_a5CACVbszDxsEOrS205zx6OWmZIP2arvJd57wsG4Yhe3_ir5-igioD6uV15JJ93LpKcAYH9sQElA92V8YLR1AbvgoA_aWM4LaVmx959NFgdZaaMZoL5uGYyJtLoFLPPLdfU7LDt-QI431S0l5aGRjaTN-OtU6pTO2kNSp-417M90f8G61lIyTWdgvh_3RzvwuJaSIOWH8PLK_mXB3pebOv3wRPVizjD4"/>
-<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent p-6 flex flex-col justify-end">
-<span class="text-primary font-bold text-xs uppercase tracking-widest mb-1">Building</span>
-<h4 class="text-white font-semibold leading-tight">No-Code AI Stack for 2024.</h4>
-</div>
-</div>
-<!-- Short 3 -->
-<div class="flex-none w-72 aspect-[9/16] bg-surface-container-highest rounded-2xl relative group overflow-hidden snap-start">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="audience silhouetted against a bright stage where a speaker is presenting complex infographics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRzkmyD855eqJEyFyQjzgxU1OzjRxf3Ef_H4_MqY8P6JYV3KY0PZScZcOeSdnrijegOlPZ7NcxpJsumWwin6nRSsHz_hx6VGbI9IWpXj3g_Xp2AEyO2AYQ7FqOngIcisRN4caGI6xjhBdUQQ4ll8FDWnkBO-3_QgfPxwy1CP53O4tAjOqS8ARDFd__y233sjVRLtH6ScRetM45iedwCDxt6cLYeZtflzJK84gh3sBEUIU8plKzAqnZ5x79eTF7s4BKlFhUJWeacfaK"/>
-<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent p-6 flex flex-col justify-end">
-<span class="text-primary font-bold text-xs uppercase tracking-widest mb-1">Speaking</span>
-<h4 class="text-white font-semibold leading-tight">Mastering the stage presence.</h4>
-</div>
-</div>
-<!-- Short 4 -->
-<div class="flex-none w-72 aspect-[9/16] bg-surface-container-highest rounded-2xl relative group overflow-hidden snap-start">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="modern office workspace with multiple monitors and minimalist desk setup at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaWE7R_Qc0XqEi9v5iaiYnTHasMjpmSHvi3acj1NrjgLf7373UgJ3k4eQSCfxLZ2gNBY8tl6JUwTSsZS57L0JmK84PQhTHGaP5n5cHdlNHHT9Q_mp_FbcBwYUm1wGpBbAXpsM44HQytr4j1PJuqL7K3N3k-nwlbtYA8EFzA4YhTmrXhg4kocgA8grZ4Mqfxgcu3X9RvltnYVHo6luGXctovLTGFjNdlh8iH7yBUCUBhirwQ3jQaltd1x4p_ng7uVdLp0x0o4AqYIhm"/>
-<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent p-6 flex flex-col justify-end">
-<span class="text-primary font-bold text-xs uppercase tracking-widest mb-1">Productivity</span>
-<h4 class="text-white font-semibold leading-tight">Automation workflows that scale.</h4>
-</div>
-</div>
-</div>
-</section>
-<!-- About Section -->
-<section class="max-w-7xl mx-auto px-8 py-24 grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-<div>
-<h3 class="text-5xl font-black tracking-tighter mb-8 leading-tight">A polymath in the <span class="text-gradient-lime">age of intelligence.</span></h3>
-<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
-<p>I’ve spent the last decade navigating the intersection of human creativity and machine efficiency. As a strategist, I don't just talk about the future; I build the tools that make it accessible today.</p>
-<p>Whether I'm hosting deep-dive conversations on my podcast or advising Fortune 500 leadership teams, my mission remains the same: demystifying complexity and driving meaningful innovation.</p>
-</div>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
-<span class="material-symbols-outlined text-primary mb-4 text-3xl">mic</span>
-<h4 class="font-bold text-xl mb-2">Speaker</h4>
-<p class="text-sm text-on-surface-variant">Keynotes on AI ethics, adoption, and future trends.</p>
-</div>
-<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 mt-8">
-<span class="material-symbols-outlined text-primary mb-4 text-3xl">podcasts</span>
-<h4 class="font-bold text-xl mb-2">Podcast Host</h4>
-<p class="text-sm text-on-surface-variant">Exploring deep tech with the world's leading builders.</p>
-</div>
-<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
-<span class="material-symbols-outlined text-primary mb-4 text-3xl">architecture</span>
-<h4 class="font-bold text-xl mb-2">AI Strategist</h4>
-<p class="text-sm text-on-surface-variant">Designing custom AI implementation roadmaps.</p>
-</div>
-<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 mt-8">
-<span class="material-symbols-outlined text-primary mb-4 text-3xl">edit_square</span>
-<h4 class="font-bold text-xl mb-2">Content Creator</h4>
-<p class="text-sm text-on-surface-variant">Synthesizing complex news for a global audience.</p>
-</div>
-</div>
-</section>
-<!-- Deep Dives: Tabbed Player -->
-<section class="bg-on-surface text-white py-24 overflow-hidden relative">
-<div class="max-w-7xl mx-auto px-8 relative z-10">
-<h3 class="text-4xl font-bold tracking-tight mb-12">Deep Dives</h3>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-<div class="lg:col-span-4 flex flex-col gap-4">
-<button class="text-left p-6 rounded-xl bg-primary/20 border-l-4 border-primary transition-all">
-<h4 class="font-bold text-lg">AI in 2025: Beyond the Hype</h4>
-<p class="text-white/60 text-sm">Main Stage Keynote • 18 min</p>
-</button>
-<button class="text-left p-6 rounded-xl hover:bg-white/5 border-l-4 border-transparent transition-all">
-<h4 class="font-bold text-lg">The Architecture of Agency</h4>
-<p class="text-white/60 text-sm">TechSummit Panel • 42 min</p>
-</button>
-<div class="text-left p-6 rounded-xl bg-white/5 border-l-4 border-primary/30 relative overflow-hidden group">
-<div class="flex justify-between items-start">
-<div>
-<h4 class="font-bold text-lg opacity-50">TEDxRegensburg 2026</h4>
-<p class="text-primary text-sm font-label uppercase tracking-widest mt-2">Coming Soon</p>
-</div>
-<span class="material-symbols-outlined text-primary opacity-50">lock</span>
-</div>
-</div>
-</div>
-<div class="lg:col-span-8">
-<div class="aspect-video bg-white/5 rounded-3xl overflow-hidden relative border border-white/10 group">
-<img class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000" data-alt="cinematic wide shot of a tech conference stage with large LED screens showing blue abstract patterns and a speaker silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkmGJv1xLeEsxrxgGHBER4j9RbgwfdvLav1ZrRT6VxvGqhykdanqnX2y86h0jKVy_7RNNS20dICxX14OVfh03vDe56Wg28zgRVqT9jfUksTBo2foe9anJ4IX_Hf3WfMuki3SxC7t-5I-MpOKB-ghP11_RTeDdlywoik2CqdfudwH6vfafPUAwNi4-otavO3sEVDQarzEjmrzSeOt0KasF-Vk-bzaINbagmIuz1s5wxihZdblpaQbZM3GU0Ktd4_yDVxIFSMWiGpFtw"/>
-<div class="absolute inset-0 flex items-center justify-center">
-<button class="w-20 h-20 bg-primary-container rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-on-primary-container text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</button>
-</div>
-<div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
-<div class="bg-black/40 backdrop-blur-md p-4 rounded-xl">
-<p class="text-sm font-medium">Currently Playing: AI in 2025: Beyond the Hype</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Background Decoration -->
-<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 blur-3xl rounded-full"></div>
-</section>
-<!-- On Stage & Air -->
-<section class="max-w-7xl mx-auto px-8 py-24">
-<h3 class="text-4xl font-bold tracking-tight mb-16 text-center">On Stage &amp; Air</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Card 1 -->
-<div class="group cursor-pointer">
-<div class="aspect-square bg-surface-container rounded-3xl mb-6 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="vintage microphone on a studio desk with soft bokeh background and warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3BeXeYleTGZiMlwlCf5EAaFc-MDiQH6AVyRM1Vp3Y7lhhsqjuI5ayQZNKAt252DpcVGpOEZsmDPL6g2qAV1ApVymN08PMwLj1iNDjB6rQeL5pSkBBCvNLhcAohoLsAKHVQJiaUgaw2rpdEsBhDIlmFIDya1J9lgNvI4IdaGgwYbPPrJVVd9CezQOpR0u7Bc_-MKqqEQgYfrKmNUF_WoXSePF5xAFeaZF72XsBrW8JpYpNtpOSPoLMPDVhG9xPZSf1qN3MhrZ47yGP"/>
-</div>
-<span class="font-label text-xs uppercase tracking-widest text-primary font-bold">Podcast Guest</span>
-<h4 class="text-2xl font-bold mt-2">The Future Theory</h4>
-<p class="text-on-surface-variant mt-2">Discussing the social impact of general artificial intelligence with Mark Sullivan.</p>
-</div>
-<!-- Card 2 -->
-<div class="group cursor-pointer">
-<div class="aspect-square bg-surface-container rounded-3xl mb-6 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="modern minimalist office building with large glass windows and clean architectural lines during daytime" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXptpJzK1a3Qf4XAthSUXYCrjGHwgkZymnvGM7XH2i9XhxHTHK3IimB4mmzo3NTGajFffVi5m2hlaaZl6oYwX4lslKwoGXeSa8zWFT9BRgE5oeopwUft80hi0B8TPBN0JkKEk5Vb860B06q9UxPpz1UbnhTFCr269LkXTKbQxFyzKymPDfcq-cf2kFHKti9-ORs9o5dllQyEJyo389fvpTmVJVo5zjVOTUJRRnEJwntn3Ue2Q5q5CBw2eTU6vhtMq6mPgUjW0FgL1M"/>
-</div>
-<span class="font-label text-xs uppercase tracking-widest text-primary font-bold">Keynote</span>
-<h4 class="text-2xl font-bold mt-2">Global Innovation Forum</h4>
-<p class="text-on-surface-variant mt-2">Opening keynote on 'The Human Component' in fully automated industries.</p>
-</div>
-<!-- Card 3 -->
-<div class="group cursor-pointer">
-<div class="aspect-square bg-surface-container rounded-3xl mb-6 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="overhead view of a designer's workspace with a sketchbook, tablet, and cup of coffee in a clean minimal style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUpG1fNky1W6wOKKGZRvsN-9wsNRyeqdazThTJIqmnlg1GmKM9wTjVZ5PhXyMAbBv4idSoP9B3UMIRTyVqJKsX595PuLfNEChmXMaHNmfrklzSJY-WmX45qRXwJraYDbQkHdJxlq0xJhrrU4Kp7OOZvx8-Pug7rXc5Z5oQzfScysfQtECy1xv4wLWh_VkRiwuul7KsyEd0EfOEoWco5zE41vuK5UYeYUdm-3JCcPSaLKbqJsdy6JIwjI2hCDiYC_i6pPs3Z4dGsqz_"/>
-</div>
-<span class="font-label text-xs uppercase tracking-widest text-primary font-bold">Strategy Workshop</span>
-<h4 class="text-2xl font-bold mt-2">Adobe Executive Series</h4>
-<p class="text-on-surface-variant mt-2">Closed-door sessions on the future of generative design tools for leadership.</p>
-</div>
-</div>
-</section>
-<!-- Let's Build Something -->
-<section class="max-w-7xl mx-auto px-8 py-24">
-<div class="bg-gradient-lime p-12 md:p-24 rounded-[3rem] text-center shadow-2xl relative overflow-hidden">
-<div class="relative z-10">
-<h2 class="text-5xl md:text-7xl font-black tracking-tighter text-on-primary-container mb-8">Let's build something <br/>extraordinary together.</h2>
-<p class="text-xl md:text-2xl text-on-primary-container/80 max-w-2xl mx-auto mb-12">
-                        Currently booking keynotes for 2025 and accepting high-impact strategic advisory roles.
-                    </p>
-<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
-<button class="bg-on-primary-container text-white px-10 py-5 rounded-2xl font-bold text-xl hover:scale-105 transition-transform">
-                            Start a Conversation
-                        </button>
-<a class="text-on-primary-container font-bold text-lg underline underline-offset-8 decoration-2 decoration-on-primary-container/30" href="mailto:hello@gabriel.ch">
-                            hello@gabriel.ch
-                        </a>
-</div>
-</div>
-<!-- Decorative Circle -->
-<div class="absolute -top-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-on-primary-container/5 rounded-full blur-3xl"></div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full py-12 bg-stone-300 dark:bg-stone-800 font-['Inter'] text-xs uppercase tracking-widest">
-<div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto">
-<div class="text-stone-500 dark:text-stone-400 mb-6 md:mb-0">
-                © 2024 Gabriel Chouchane. All rights reserved.
+
+<body class="bg-cream-50 text-cream-800 font-body grain">
+
+  <!-- ============================================ -->
+  <!-- NAVIGATION -->
+  <!-- ============================================ -->
+  <nav id="navbar" class="fixed top-0 w-full z-50 nav-glass">
+    <div class="flex justify-between items-center px-6 md:px-10 py-4 max-w-7xl mx-auto">
+      <a href="#hero" class="text-xl font-display font-bold tracking-tight text-cream-800">
+        Gabriel Chouchane
+      </a>
+      <div class="hidden md:flex gap-8 items-center">
+        <a href="#about" class="text-cream-600 hover:text-cream-800 transition-colors text-sm font-medium tracking-wide">About</a>
+        <a href="#content" class="text-cream-600 hover:text-cream-800 transition-colors text-sm font-medium tracking-wide">Content</a>
+        <a href="#deep-dives" class="text-cream-600 hover:text-cream-800 transition-colors text-sm font-medium tracking-wide">Deep Dives</a>
+        <a href="#speaking" class="text-cream-600 hover:text-cream-800 transition-colors text-sm font-medium tracking-wide">Speaking</a>
+        <a href="#services" class="text-cream-600 hover:text-cream-800 transition-colors text-sm font-medium tracking-wide">Services</a>
+        <a href="#contact" class="text-cream-600 hover:text-cream-800 transition-colors text-sm font-medium tracking-wide">Contact</a>
+        <a href="https://calendly.com/gabriel-chouchane/30min" target="_blank" rel="noopener" class="btn-glow px-5 py-2 rounded-lg font-semibold text-sm">Book a Call</a>
+      </div>
+      <button id="menu-toggle" class="md:hidden text-cream-700 p-1">
+        <span class="material-symbols-outlined text-[28px]">menu</span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="mobile-menu md:hidden bg-cream-50/95 backdrop-blur-lg border-t border-cream-500/10">
+      <div class="flex flex-col px-6 py-4 gap-3">
+        <a href="#about" class="text-cream-700 font-medium py-2 mobile-link">About</a>
+        <a href="#content" class="text-cream-700 font-medium py-2 mobile-link">Content</a>
+        <a href="#deep-dives" class="text-cream-700 font-medium py-2 mobile-link">Deep Dives</a>
+        <a href="#speaking" class="text-cream-700 font-medium py-2 mobile-link">Speaking</a>
+        <a href="#services" class="text-cream-700 font-medium py-2 mobile-link">Services</a>
+        <a href="#contact" class="text-cream-700 font-medium py-2 mobile-link">Contact</a>
+        <a href="https://calendly.com/gabriel-chouchane/30min" target="_blank" rel="noopener" class="btn-glow px-5 py-3 rounded-lg font-semibold text-sm text-center mobile-link">Book a Call</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============================================ -->
+    <!-- HERO -->
+    <!-- ============================================ -->
+    <section id="hero" class="relative overflow-hidden">
+      <!-- Sound waveform background -->
+      <div class="waveform-container">
+        <!-- Layer 1: Primary waveform — smooth audio oscillation -->
+        <svg class="waveform-layer-1" viewBox="0 0 2400 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="waveform-line" stroke="#a6e505" stroke-width="2.5" opacity="0.25"
+            d="M0,400 C50,400 75,320 100,320 C125,320 150,400 200,400 C250,400 275,460 300,460 C325,460 350,400 400,400 C450,400 475,340 500,340 C525,340 550,400 600,400 C650,400 675,450 700,450 C725,450 750,400 800,400 C850,400 875,330 900,330 C925,330 950,400 1000,400 C1050,400 1075,460 1100,460 C1125,460 1150,400 1200,400 C1250,400 1275,320 1300,320 C1325,320 1350,400 1400,400 C1450,400 1475,460 1500,460 C1525,460 1550,400 1600,400 C1650,400 1675,340 1700,340 C1725,340 1750,400 1800,400 C1850,400 1875,450 1900,450 C1925,450 1950,400 2000,400 C2050,400 2075,330 2100,330 C2125,330 2150,400 2200,400 C2250,400 2275,460 2300,460 C2325,460 2350,400 2400,400" />
+          <path class="waveform-line" stroke="#a6e505" stroke-width="1.5" opacity="0.15"
+            d="M0,400 C30,400 45,360 60,360 C75,360 90,400 120,400 C150,400 165,435 180,435 C195,435 210,400 240,400 C270,400 285,370 300,370 C315,370 330,400 360,400 C390,400 405,425 420,425 C435,425 450,400 480,400 C510,400 525,365 540,365 C555,365 570,400 600,400 C630,400 645,430 660,430 C675,430 690,400 720,400 C750,400 765,360 780,360 C795,360 810,400 840,400 C870,400 885,435 900,435 C915,435 930,400 960,400 C990,400 1005,370 1020,370 C1035,370 1050,400 1080,400 C1110,400 1125,425 1140,425 C1155,425 1170,400 1200,400 C1230,400 1245,360 1260,360 C1275,360 1290,400 1320,400 C1350,400 1365,435 1380,435 C1395,435 1410,400 1440,400 C1470,400 1485,370 1500,370 C1515,370 1530,400 1560,400 C1590,400 1605,425 1620,425 C1635,425 1650,400 1680,400 C1710,400 1725,365 1740,365 C1755,365 1770,400 1800,400 C1830,400 1845,430 1860,430 C1875,430 1890,400 1920,400 C1950,400 1965,360 1980,360 C1995,360 2010,400 2040,400 C2070,400 2085,435 2100,435 C2115,435 2130,400 2160,400 C2190,400 2205,370 2220,370 C2235,370 2250,400 2280,400 C2310,400 2325,425 2340,425 C2355,425 2370,400 2400,400" />
+        </svg>
+        <!-- Layer 2: Offset waveform — wider amplitude, opposite direction -->
+        <svg class="waveform-layer-2" viewBox="0 0 2400 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="waveform-line" stroke="#DED6CC" stroke-width="2" opacity="0.3"
+            d="M0,380 C60,380 90,300 120,300 C150,300 180,380 240,380 C300,380 330,470 360,470 C390,470 420,380 480,380 C540,380 570,310 600,310 C630,310 660,380 720,380 C780,380 810,460 840,460 C870,460 900,380 960,380 C1020,380 1050,290 1080,290 C1110,290 1140,380 1200,380 C1260,380 1290,470 1320,470 C1350,470 1380,380 1440,380 C1500,380 1530,310 1560,310 C1590,310 1620,380 1680,380 C1740,380 1770,460 1800,460 C1830,460 1860,380 1920,380 C1980,380 2010,300 2040,300 C2070,300 2100,380 2160,380 C2220,380 2250,470 2280,470 C2310,470 2340,380 2400,380" />
+        </svg>
+        <!-- Layer 3: Gentle long wave + dotted baseline -->
+        <svg class="waveform-layer-3" viewBox="0 0 2400 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="waveform-line" stroke="#a6e505" stroke-width="1.2" opacity="0.12"
+            d="M0,420 C100,420 150,340 200,340 C250,340 300,420 400,420 C500,420 550,490 600,490 C650,490 700,420 800,420 C900,420 950,330 1000,330 C1050,330 1100,420 1200,420 C1300,420 1350,490 1400,490 C1450,490 1500,420 1600,420 C1700,420 1750,340 1800,340 C1850,340 1900,420 2000,420 C2100,420 2150,490 2200,490 C2250,490 2300,420 2400,420" />
+          <path class="waveform-line" stroke="#DED6CC" stroke-width="1.2" opacity="0.18" stroke-dasharray="3 20"
+            d="M0,400 L2400,400" />
+        </svg>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 md:px-10 pt-28 pb-16 md:pt-36 md:pb-24 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center min-h-[85vh] relative z-10">
+      <div class="lg:col-span-7 fade-up">
+        <p class="text-sm font-medium tracking-[0.2em] uppercase text-cream-600 mb-5">Speaker. Podcast Host. AI Strategist.</p>
+        <h1 class="font-display tracking-tight text-cream-800 mb-7">
+          <span class="block text-2xl sm:text-3xl font-medium text-cream-600 mb-2 leading-none">I'm</span>
+          <span class="block text-6xl sm:text-7xl md:text-8xl font-extrabold leading-[0.92]">Gabe.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-cream-600 max-w-xl leading-relaxed mb-9">
+          I host high-impact podcasts for companies and speak on AI, entrepreneurship, and the human side of technology. Five languages. Three companies built. C-suite conversations on camera.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#content" class="btn-glow px-7 py-3.5 rounded-xl font-bold text-base inline-block">
+            Watch My Content
+          </a>
+          <a href="https://calendly.com/gabriel-chouchane/30min" target="_blank" rel="noopener" class="btn-outline px-7 py-3.5 rounded-xl font-bold text-base inline-block">
+            Book a Call
+          </a>
+        </div>
+      </div>
+      <div class="lg:col-span-5 relative fade-up" style="animation-delay: 0.15s">
+        <div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden relative bg-cream-200">
+          <img
+            alt="Gabriel Chouchane"
+            class="w-full h-full object-cover"
+            src="headshot.jpg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- LOGO SLIDER -->
+    <!-- ============================================ -->
+    <section class="py-14 md:py-16 border-t border-cream-300/50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 mb-8 fade-up">
+        <p class="text-xs font-medium tracking-[0.25em] uppercase text-cream-500 text-center">Trusted By</p>
+      </div>
+      <div class="fade-up" style="animation-delay: 0.1s">
+        <div class="logo-slider-track">
+          <img src="Logos/Fitch_Ratings_logo.svg.png" alt="Fitch Ratings" />
+          <img src="Logos/MSDUK-Logo-RGB-No-Srapline-1-1024x271-removebg-preview.png" alt="MSDUK" />
+          <img src="Logos/Logo-OTH-Regensburg.png" alt="OTH Regensburg" />
+          <img src="Logos/4YFN_logo_Black_RGB.png" alt="4YFN" class="logo-square" />
+          <img src="Logos/Amazon_logo.svg.webp" alt="Amazon" />
+          <img src="Logos/Logo_of_the_United_Nations.svg" alt="United Nations" />
+          <img src="Logos/TripAdvisor_Logo.svg" alt="TripAdvisor" />
+          <img src="Logos/UM6P_1337.png" alt="1337 Coding School" class="logo-square" />
+          <img src="Logos/LOGO_FULL.svg" alt="Day Devs" />
+          <img src="Logos/logo design.svg" alt="Build Founded" />
+          <!-- Duplicate set for seamless loop -->
+          <img src="Logos/Fitch_Ratings_logo.svg.png" alt="Fitch Ratings" />
+          <img src="Logos/MSDUK-Logo-RGB-No-Srapline-1-1024x271-removebg-preview.png" alt="MSDUK" />
+          <img src="Logos/Logo-OTH-Regensburg.png" alt="OTH Regensburg" />
+          <img src="Logos/4YFN_logo_Black_RGB.png" alt="4YFN" class="logo-square" />
+          <img src="Logos/Amazon_logo.svg.webp" alt="Amazon" />
+          <img src="Logos/Logo_of_the_United_Nations.svg" alt="United Nations" />
+          <img src="Logos/TripAdvisor_Logo.svg" alt="TripAdvisor" />
+          <img src="Logos/UM6P_1337.png" alt="1337 Coding School" class="logo-square" />
+          <img src="Logos/LOGO_FULL.svg" alt="Day Devs" />
+          <img src="Logos/logo design.svg" alt="Build Founded" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SHORT-FORM CONTENT CAROUSEL -->
+    <!-- ============================================ -->
+    <section id="content" class="py-20 md:py-28 overflow-hidden bg-dark-800">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="flex justify-between items-end mb-10 fade-up">
+          <div>
+            <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight mb-2 text-white">Quick Insights</h2>
+            <p class="text-white/50">Bite-sized takes on AI, business, and culture.</p>
+          </div>
+          <div class="flex gap-2">
+            <button id="carousel-prev" class="w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-lime-400 hover:text-cream-900 transition-colors">
+              <span class="material-symbols-outlined text-[20px]">arrow_back</span>
+            </button>
+            <button id="carousel-next" class="w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-lime-400 hover:text-cream-900 transition-colors">
+              <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 md:px-10 fade-up" style="animation-delay: 0.1s">
+        <div id="carousel-container" class="overflow-hidden cursor-grab active:cursor-grabbing">
+          <div id="carousel-track" class="carousel-track">
+
+            <!-- SHORT 1 -->
+            <div class="flex-none w-[260px] md:w-[280px] carousel-card">
+              <div class="glossy-frame">
+              <div class="aspect-[9/16] rounded-2xl overflow-hidden bg-black short-placeholder group relative cursor-pointer short-video" data-video-id="RzQ3XRPTex0">
+                <img src="https://img.youtube.com/vi/RzQ3XRPTex0/0.jpg" alt="Short #1" class="w-full h-full object-cover short-thumb" loading="lazy" />
+                <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors z-10 short-overlay">
+                  <div class="yt-play-btn"><span class="material-symbols-outlined">play_arrow</span></div>
+                </div>
+                <div class="absolute bottom-4 left-4 right-4 z-20 short-label">
+                  <span class="text-xs font-bold text-lime-400 tracking-widest uppercase">AI Strategy</span>
+                </div>
+              </div>
+              </div>
             </div>
-<div class="flex gap-8">
-<a class="text-stone-500 dark:text-stone-400 hover:text-lime-500 transition-colors opacity-100 hover:opacity-70" href="#">LinkedIn</a>
-<a class="text-stone-500 dark:text-stone-400 hover:text-lime-500 transition-colors opacity-100 hover:opacity-70" href="#">YouTube</a>
-<a class="text-stone-500 dark:text-stone-400 hover:text-lime-500 transition-colors opacity-100 hover:opacity-70" href="#">Email</a>
-</div>
-</div>
-</footer>
-</body></html>
+
+            <!-- SHORT 2 -->
+            <div class="flex-none w-[260px] md:w-[280px] carousel-card">
+              <div class="glossy-frame">
+              <div class="aspect-[9/16] rounded-2xl overflow-hidden bg-black short-placeholder group relative cursor-pointer short-video" data-video-id="1k0N5Hdpggw">
+                <img src="https://img.youtube.com/vi/1k0N5Hdpggw/0.jpg" alt="Short #2" class="w-full h-full object-cover short-thumb" loading="lazy" />
+                <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors z-10 short-overlay">
+                  <div class="yt-play-btn"><span class="material-symbols-outlined">play_arrow</span></div>
+                </div>
+                <div class="absolute bottom-4 left-4 right-4 z-20 short-label">
+                  <span class="text-xs font-bold text-lime-400 tracking-widest uppercase">Building</span>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            <!-- SHORT 3 -->
+            <div class="flex-none w-[260px] md:w-[280px] carousel-card">
+              <div class="glossy-frame">
+              <div class="aspect-[9/16] rounded-2xl overflow-hidden bg-black short-placeholder group relative cursor-pointer short-video" data-video-id="5QDem_bReLU">
+                <img src="https://img.youtube.com/vi/5QDem_bReLU/0.jpg" alt="Short #3" class="w-full h-full object-cover short-thumb" loading="lazy" />
+                <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors z-10 short-overlay">
+                  <div class="yt-play-btn"><span class="material-symbols-outlined">play_arrow</span></div>
+                </div>
+                <div class="absolute bottom-4 left-4 right-4 z-20 short-label">
+                  <span class="text-xs font-bold text-lime-400 tracking-widest uppercase">Speaking</span>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            <!-- SHORT 4 -->
+            <div class="flex-none w-[260px] md:w-[280px] carousel-card">
+              <div class="glossy-frame">
+              <div class="aspect-[9/16] rounded-2xl overflow-hidden bg-black short-placeholder group relative cursor-pointer short-video" data-video-id="A0bErJwQjX8">
+                <img src="https://img.youtube.com/vi/A0bErJwQjX8/0.jpg" alt="Short #4" class="w-full h-full object-cover short-thumb" loading="lazy" />
+                <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors z-10 short-overlay">
+                  <div class="yt-play-btn"><span class="material-symbols-outlined">play_arrow</span></div>
+                </div>
+                <div class="absolute bottom-4 left-4 right-4 z-20 short-label">
+                  <span class="text-xs font-bold text-lime-400 tracking-widest uppercase">Productivity</span>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            <!-- SHORT 5 -->
+            <div class="flex-none w-[260px] md:w-[280px] carousel-card">
+              <div class="glossy-frame">
+              <div class="aspect-[9/16] rounded-2xl overflow-hidden bg-black short-placeholder group relative cursor-pointer short-video" data-video-id="Z8_0LSLuJMg">
+                <img src="https://img.youtube.com/vi/Z8_0LSLuJMg/0.jpg" alt="Short #5" class="w-full h-full object-cover short-thumb" loading="lazy" />
+                <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors z-10 short-overlay">
+                  <div class="yt-play-btn"><span class="material-symbols-outlined">play_arrow</span></div>
+                </div>
+                <div class="absolute bottom-4 left-4 right-4 z-20 short-label">
+                  <span class="text-xs font-bold text-lime-400 tracking-widest uppercase">Innovation</span>
+                </div>
+              </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Dot indicators -->
+        <div id="carousel-dots" class="flex gap-2 justify-center mt-6"></div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ABOUT -->
+    <!-- ============================================ -->
+    <section id="about" class="bg-cream-100 py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div class="fade-up">
+          <h2 class="font-display text-4xl md:text-5xl font-extrabold tracking-tight mb-7 leading-tight text-cream-800">
+            Where technology<br/>
+            <span class="text-lime-500">meets human insight.</span>
+          </h2>
+          <div class="space-y-5 text-base md:text-lg text-cream-600 leading-relaxed">
+            <p>I'm a certified intercultural communications expert, fluent in five languages (English, French, Arabic, German, and Spanish), and I've built three companies from the ground up. That range is not accidental. It is what happens when you spend your career at the intersection of people, business, and technology.</p>
+            <p>As the host of the People and Tech podcast, I sit down with CTOs, founders, and C-suite leaders at companies like Amazon, TripAdvisor, and Fitch Group to break down how technology is reshaping industries. On stage, I speak about AI adoption, entrepreneurship, team leadership, and the cultural dynamics that make or break organizations.</p>
+            <p>Whether you need a speaker for your next event or someone to build and run a podcast that gives your company a voice, I bring the expertise, the network, and the on-camera presence to make it happen.</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 fade-up" style="animation-delay: 0.1s">
+          <div class="bg-white p-7 rounded-xl card-hover">
+            <span class="material-symbols-outlined text-lime-500 mb-3 text-3xl">mic</span>
+            <h4 class="font-display font-bold text-lg mb-1.5">Speaker</h4>
+            <p class="text-sm text-cream-600">Keynotes and lectures on AI, entrepreneurship, and intercultural leadership.</p>
+          </div>
+          <div class="bg-white p-7 rounded-xl mt-8 card-hover">
+            <span class="material-symbols-outlined text-lime-500 mb-3 text-3xl">podcasts</span>
+            <h4 class="font-display font-bold text-lg mb-1.5">Podcast Host</h4>
+            <p class="text-sm text-cream-600">Building and running podcasts for companies. From setup to C-suite interviews.</p>
+          </div>
+          <div class="bg-white p-7 rounded-xl card-hover">
+            <span class="material-symbols-outlined text-lime-500 mb-3 text-3xl">rocket_launch</span>
+            <h4 class="font-display font-bold text-lg mb-1.5">Entrepreneur</h4>
+            <p class="text-sm text-cream-600">Founded three companies across software, startups, and consumer brands.</p>
+          </div>
+          <div class="bg-white p-7 rounded-xl mt-8 card-hover">
+            <span class="material-symbols-outlined text-lime-500 mb-3 text-3xl">psychology</span>
+            <h4 class="font-display font-bold text-lg mb-1.5">AI Strategist</h4>
+            <p class="text-sm text-cream-600">Helping teams understand and adopt AI with clarity, not hype.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- DEEP DIVES (TABBED PLAYER) -->
+    <!-- ============================================ -->
+    <section id="deep-dives" class="bg-dark-800 text-white py-20 md:py-28 relative overflow-hidden">
+      <!-- Ambient glow -->
+      <div class="absolute top-0 right-0 w-1/3 h-full bg-lime-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
+        <div class="mb-10 fade-up">
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight mb-2">Deep Dives</h2>
+          <p class="text-white/50">Full-length interviews and talks from the People and Tech podcast.</p>
+        </div>
+
+        <!-- Side-by-side: sidebar menu (left) + player (right) -->
+        <div class="flex flex-col lg:flex-row gap-6 fade-up" style="animation-delay: 0.1s">
+
+          <!-- Scrollable sidebar menu -->
+          <div class="deep-dive-sidebar lg:w-80 flex-shrink-0 flex flex-row lg:flex-col gap-3 overflow-x-auto lg:overflow-x-visible pr-2">
+
+            <button class="deep-dive-card active rounded-xl overflow-hidden group relative cursor-pointer text-left w-64 lg:w-full" data-video-id="mOnFp4GFsHE" data-title="Deep Dive with Amazon">
+              <div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl">
+                <img src="https://img.youtube.com/vi/mOnFp4GFsHE/mqdefault.jpg" alt="Deep Dive with Amazon" class="w-28 h-16 object-cover rounded-lg flex-shrink-0" loading="lazy" />
+                <div class="min-w-0">
+                  <h4 class="font-display font-bold text-sm text-white leading-tight truncate">Deep Dive with Amazon</h4>
+                  <div class="flex items-center gap-1 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="material-symbols-outlined text-lime-400 text-[14px]" style="font-variation-settings: 'FILL' 1">play_arrow</span>
+                    <span class="text-[11px] text-lime-400 font-medium">Play</span>
+                  </div>
+                </div>
+              </div>
+            </button>
+
+            <button class="deep-dive-card rounded-xl overflow-hidden group relative cursor-pointer text-left w-64 lg:w-full" data-video-id="9pdnl0bmIrk" data-title="Scaling Teams with TripAdvisor">
+              <div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl">
+                <img src="https://img.youtube.com/vi/9pdnl0bmIrk/mqdefault.jpg" alt="Scaling Teams with TripAdvisor" class="w-28 h-16 object-cover rounded-lg flex-shrink-0" loading="lazy" />
+                <div class="min-w-0">
+                  <h4 class="font-display font-bold text-sm text-white leading-tight truncate">Scaling Teams with TripAdvisor</h4>
+                  <div class="flex items-center gap-1 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="material-symbols-outlined text-lime-400 text-[14px]" style="font-variation-settings: 'FILL' 1">play_arrow</span>
+                    <span class="text-[11px] text-lime-400 font-medium">Play</span>
+                  </div>
+                </div>
+              </div>
+            </button>
+
+            <button class="deep-dive-card rounded-xl overflow-hidden group relative cursor-pointer text-left w-64 lg:w-full" data-video-id="TOAVD8MInak" data-title="Leadership with Diddo">
+              <div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl">
+                <img src="https://img.youtube.com/vi/TOAVD8MInak/mqdefault.jpg" alt="Leadership with Diddo" class="w-28 h-16 object-cover rounded-lg flex-shrink-0" loading="lazy" />
+                <div class="min-w-0">
+                  <h4 class="font-display font-bold text-sm text-white leading-tight truncate">Leadership with Diddo</h4>
+                  <div class="flex items-center gap-1 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="material-symbols-outlined text-lime-400 text-[14px]" style="font-variation-settings: 'FILL' 1">play_arrow</span>
+                    <span class="text-[11px] text-lime-400 font-medium">Play</span>
+                  </div>
+                </div>
+              </div>
+            </button>
+
+            <button class="deep-dive-card rounded-xl overflow-hidden group relative cursor-pointer text-left w-64 lg:w-full" data-video-id="-89N0z4ZyUE" data-title="Software Innovation with Fitch Group">
+              <div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl">
+                <img src="https://img.youtube.com/vi/-89N0z4ZyUE/mqdefault.jpg" alt="Software Innovation with Fitch Group" class="w-28 h-16 object-cover rounded-lg flex-shrink-0" loading="lazy" />
+                <div class="min-w-0">
+                  <h4 class="font-display font-bold text-sm text-white leading-tight truncate">Software Innovation with Fitch Group</h4>
+                  <div class="flex items-center gap-1 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="material-symbols-outlined text-lime-400 text-[14px]" style="font-variation-settings: 'FILL' 1">play_arrow</span>
+                    <span class="text-[11px] text-lime-400 font-medium">Play</span>
+                  </div>
+                </div>
+              </div>
+            </button>
+
+            <button class="deep-dive-card rounded-xl overflow-hidden group relative cursor-pointer text-left w-64 lg:w-full" data-video-id="w0O9gTOujRQ" data-title="Leveraging AI with Cold IQ">
+              <div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl">
+                <img src="https://img.youtube.com/vi/w0O9gTOujRQ/mqdefault.jpg" alt="Leveraging AI with Cold IQ" class="w-28 h-16 object-cover rounded-lg flex-shrink-0" loading="lazy" />
+                <div class="min-w-0">
+                  <h4 class="font-display font-bold text-sm text-white leading-tight truncate">Leveraging AI with Cold IQ</h4>
+                  <div class="flex items-center gap-1 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="material-symbols-outlined text-lime-400 text-[14px]" style="font-variation-settings: 'FILL' 1">play_arrow</span>
+                    <span class="text-[11px] text-lime-400 font-medium">Play</span>
+                  </div>
+                </div>
+              </div>
+            </button>
+
+            <button class="deep-dive-card rounded-xl overflow-hidden group relative cursor-pointer text-left w-64 lg:w-full" data-video-id="e1f6YXOp9gc" data-title="Entrepreneurship and AI Lecture at OTH University">
+              <div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl">
+                <img src="https://img.youtube.com/vi/e1f6YXOp9gc/mqdefault.jpg" alt="AI Lecture at OTH University" class="w-28 h-16 object-cover rounded-lg flex-shrink-0" loading="lazy" />
+                <div class="min-w-0">
+                  <h4 class="font-display font-bold text-sm text-white leading-tight truncate">AI Lecture at OTH University</h4>
+                  <div class="flex items-center gap-1 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="material-symbols-outlined text-lime-400 text-[14px]" style="font-variation-settings: 'FILL' 1">play_arrow</span>
+                    <span class="text-[11px] text-lime-400 font-medium">Play</span>
+                  </div>
+                </div>
+              </div>
+            </button>
+
+            <!-- TEDx Coming Soon -->
+            <div class="rounded-xl overflow-hidden relative cursor-default w-64 lg:w-full flex-shrink-0">
+              <div class="flex items-center gap-3 p-3 bg-dark-700/50 border border-white/10 rounded-xl">
+                <div class="w-28 h-16 flex-shrink-0 rounded-lg bg-dark-700/80 flex items-center justify-center">
+                  <div class="text-center">
+                    <div class="tedx-pulse inline-flex items-center gap-1 bg-white/10 px-2 py-0.5 rounded-full">
+                      <span class="w-1.5 h-1.5 bg-lime-400 rounded-full"></span>
+                      <span class="text-[9px] font-medium text-lime-400 tracking-wide">UPCOMING</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="min-w-0">
+                  <h4 class="font-display font-bold text-sm text-white/40 leading-tight truncate">TEDxRegensburg 2026</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Main video player -->
+          <div class="flex-1 min-w-0">
+            <div id="deep-dive-player" class="aspect-video rounded-2xl overflow-hidden bg-black mb-3">
+              <iframe id="deep-dive-iframe" src="https://www.youtube.com/embed/mOnFp4GFsHE?rel=0&modestbranding=1&origin=https://www.youtube.com" title="Deep Dive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-full"></iframe>
+            </div>
+            <h3 id="deep-dive-title" class="font-display text-xl font-bold mb-1">Deep Dive with Amazon</h3>
+            <a id="deep-dive-yt-link" href="https://www.youtube.com/watch?v=mOnFp4GFsHE" class="text-lime-400 text-sm font-medium hover:underline" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SPEAKING & PODCASTS -->
+    <!-- ============================================ -->
+    <section id="speaking" class="py-20 md:py-28 bg-cream-100">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-14 gap-4 fade-up">
+          <div>
+            <p class="text-sm font-medium tracking-[0.2em] uppercase text-lime-600 mb-3">Appearances</p>
+            <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight">Speaking & Podcasts</h2>
+          </div>
+          <p class="max-w-md text-cream-600 leading-relaxed">
+            From the United Nations to university lecture halls, I speak on AI, entrepreneurship, and what it takes to build teams across cultures. Looking for a speaker or podcast host? Let's talk.
+          </p>
+        </div>
+
+        <!-- TEDx Featured Card -->
+        <div class="rounded-2xl overflow-hidden mb-8 card-hover fade-up border border-white/10" style="animation-delay: 0.05s">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <div class="bg-dark-800 p-10 md:p-14 flex flex-col justify-center relative overflow-hidden">
+              <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(235,0,40,0.06),transparent_60%)]"></div>
+              <div class="relative z-10">
+                <div class="tedx-pulse inline-flex items-center gap-2 bg-lime-500/15 px-3 py-1.5 rounded-full mb-6">
+                  <span class="w-2 h-2 bg-lime-400 rounded-full"></span>
+                  <span class="text-sm font-medium text-lime-400 tracking-wide">UPCOMING 2026</span>
+                </div>
+                <!-- TEDx logo: TED large + x superscript, both red. OTH grey, Regensburg white -->
+                <div class="mb-5" aria-label="TEDx OTH Regensburg">
+                  <div class="flex items-start gap-0 leading-none">
+                    <span class="font-display text-5xl md:text-6xl font-black tracking-tight" style="color: #EB0028;">TED</span><span class="font-display text-3xl md:text-4xl font-black tracking-tight relative" style="color: #EB0028; top: 0.05em;">x</span>
+                  </div>
+                  <div class="flex items-baseline gap-0 mt-1">
+                    <span class="font-display text-3xl md:text-4xl font-black tracking-tight text-white/40">OTH</span><span class="font-display text-3xl md:text-4xl font-black tracking-tight text-white">Regensburg</span>
+                  </div>
+                </div>
+                <p class="text-white/60 leading-relaxed">A talk on rethinking how we relate to AI. Not about the technology itself, but about shifting how people think about the tools around them.</p>
+              </div>
+            </div>
+            <div class="bg-dark-900 aspect-[4/3] md:aspect-auto flex items-center justify-center relative overflow-hidden">
+              <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(235,0,40,0.06),transparent_60%)]"></div>
+              <div class="waveform-container">
+                <svg class="waveform-layer-1" viewBox="0 0 2400 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="waveform-line" stroke="#a6e505" stroke-width="1.5" opacity="0.1"
+                    d="M0,400 C50,400 75,320 100,320 C125,320 150,400 200,400 C250,400 275,460 300,460 C325,460 350,400 400,400 C450,400 475,340 500,340 C525,340 550,400 600,400 C650,400 675,450 700,450 C725,450 750,400 800,400 C850,400 875,330 900,330 C925,330 950,400 1000,400 C1050,400 1075,460 1100,460 C1125,460 1150,400 1200,400 C1250,400 1275,320 1300,320 C1325,320 1350,400 1400,400 C1450,400 1475,460 1500,460 C1525,460 1550,400 1600,400 C1650,400 1675,340 1700,340 C1725,340 1750,400 1800,400 C1850,400 1875,450 1900,450 C1925,450 1950,400 2000,400 C2050,400 2075,330 2100,330 C2125,330 2150,400 2200,400 C2250,400 2275,460 2300,460 C2325,460 2350,400 2400,400" />
+                </svg>
+                <svg class="waveform-layer-2" viewBox="0 0 2400 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="waveform-line" stroke="#a6e505" stroke-width="1" opacity="0.07"
+                    d="M0,380 C60,380 90,300 120,300 C150,300 180,380 240,380 C300,380 330,470 360,470 C390,470 420,380 480,380 C540,380 570,310 600,310 C630,310 660,380 720,380 C780,380 810,460 840,460 C870,460 900,380 960,380 C1020,380 1050,290 1080,290 C1110,290 1140,380 1200,380 C1260,380 1290,470 1320,470 C1350,470 1380,380 1440,380 C1500,380 1530,310 1560,310 C1590,310 1620,380 1680,380 C1740,380 1770,460 1800,460 C1830,460 1860,380 1920,380 C1980,380 2010,300 2040,300 C2070,300 2100,380 2160,380 C2220,380 2250,470 2280,470 C2310,470 2340,380 2400,380" />
+                </svg>
+                <svg class="waveform-layer-3" viewBox="0 0 2400 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="waveform-line" stroke="#a6e505" stroke-width="0.8" opacity="0.05" stroke-dasharray="3 20"
+                    d="M0,400 L2400,400" />
+                </svg>
+              </div>
+              <div class="text-center p-10 relative z-10">
+                <p class="text-white/50 leading-relaxed mb-8">Interested in booking me for your event?</p>
+                <a href="https://calendly.com/gabriel-chouchane/30min" target="_blank" rel="noopener" class="btn-glow px-7 py-3.5 rounded-xl font-bold text-base inline-block">Book a Call</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Past Events -->
+        <div class="fade-up" style="animation-delay: 0.1s">
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="font-display text-xl font-bold text-cream-800">Past Events</h3>
+            <div class="flex gap-2">
+              <button id="events-prev" class="w-9 h-9 rounded-full bg-cream-300 text-cream-600 flex items-center justify-center hover:bg-lime-400 hover:text-cream-900 transition-colors">
+                <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+              </button>
+              <button id="events-next" class="w-9 h-9 rounded-full bg-cream-300 text-cream-600 flex items-center justify-center hover:bg-lime-400 hover:text-cream-900 transition-colors">
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <div id="events-track" class="flex gap-5 transition-transform duration-500 ease-out">
+
+              <!-- Event 1: United Nations -->
+              <div class="flex-none w-80 md:w-88 rounded-xl overflow-hidden event-card group" style="width: 22rem;">
+                <div class="p-6 flex flex-col h-full">
+                  <div class="flex items-center justify-between mb-5">
+                    <span class="bg-lime-400 text-lime-900 text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full">Workshop</span>
+                  </div>
+                  <div class="flex items-center justify-center py-6 px-4 mb-5">
+                    <img src="Logos/Logo_of_the_United_Nations.svg" alt="United Nations" class="h-16 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                  <h4 class="font-display font-bold text-lg mb-1.5 text-cream-800">United Nations</h4>
+                  <p class="text-cream-600 text-sm leading-relaxed">Entrepreneurship and doing business across Europe and the UK.</p>
+                </div>
+              </div>
+
+              <!-- Event 2: OTH Regensburg -->
+              <div class="flex-none rounded-xl overflow-hidden event-card group" style="width: 22rem;">
+                <div class="p-6 flex flex-col h-full">
+                  <div class="flex items-center justify-between mb-5">
+                    <span class="bg-lime-400 text-lime-900 text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full">Lecture</span>
+                  </div>
+                  <div class="flex items-center justify-center py-6 px-4 mb-5">
+                    <img src="Logos/Logo-OTH-Regensburg.png" alt="OTH Regensburg" class="h-14 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                  <h4 class="font-display font-bold text-lg mb-1.5 text-cream-800">OTH Regensburg</h4>
+                  <p class="text-cream-600 text-sm leading-relaxed">Guest lecture on building businesses, sales strategy, and practical AI adoption.</p>
+                </div>
+              </div>
+
+              <!-- Event 3: 4YFN -->
+              <div class="flex-none rounded-xl overflow-hidden event-card group" style="width: 22rem;">
+                <div class="p-6 flex flex-col h-full">
+                  <div class="flex items-center justify-between mb-5">
+                    <span class="bg-lime-400 text-lime-900 text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full">Talk</span>
+                  </div>
+                  <div class="flex items-center justify-center py-6 px-4 mb-5">
+                    <img src="Logos/4YFN_logo_Black_RGB.png" alt="4YFN" class="h-16 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                  <h4 class="font-display font-bold text-lg mb-1.5 text-cream-800">4YFN Barcelona</h4>
+                  <p class="text-cream-600 text-sm leading-relaxed">Talk on business and entrepreneurship at the global startup event during MWC.</p>
+                </div>
+              </div>
+
+              <!-- Event 4: 1337 Coding School -->
+              <div class="flex-none rounded-xl overflow-hidden event-card group" style="width: 22rem;">
+                <div class="p-6 flex flex-col h-full">
+                  <div class="flex items-center justify-between mb-5">
+                    <span class="bg-lime-400 text-lime-900 text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full">Talk</span>
+                  </div>
+                  <div class="flex items-center justify-center py-6 px-4 mb-5">
+                    <img src="Logos/UM6P_1337.png" alt="1337 Coding School" class="h-16 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                  <h4 class="font-display font-bold text-lg mb-1.5 text-cream-800">1337 Coding School</h4>
+                  <p class="text-cream-600 text-sm leading-relaxed">Speaking on technology and innovation at UM6P's coding university in Morocco.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SERVICES -->
+    <!-- ============================================ -->
+    <section id="services" class="py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="text-center mb-14 fade-up">
+          <p class="text-sm font-medium tracking-[0.2em] uppercase text-lime-600 mb-3">What I Do</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-cream-800 mb-4">Services</h2>
+          <p class="text-cream-600 max-w-2xl mx-auto leading-relaxed">Every engagement is tailored. Here is what you can book me for.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto fade-up" style="animation-delay: 0.1s">
+
+          <!-- Service 1: Podcast-as-a-Service -->
+          <div class="bg-white border border-cream-300/50 rounded-2xl p-8 md:p-10 card-hover group relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-lime-400/5 rounded-full blur-[60px] pointer-events-none"></div>
+            <div class="relative z-10">
+              <div class="w-14 h-14 rounded-xl bg-lime-400/15 flex items-center justify-center mb-6 group-hover:bg-lime-400/30 transition-colors">
+                <span class="material-symbols-outlined text-lime-600 text-2xl">podcasts</span>
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3">Podcast-as-a-Service</h3>
+              <p class="text-cream-600 text-sm leading-relaxed mb-5">I build and run your company's podcast end-to-end. Strategy, guest booking, hosting, production oversight. You get a professional show with C-suite caliber conversations without building an internal team.</p>
+              <ul class="space-y-2 text-sm text-cream-600">
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>Full podcast setup and launch</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>Guest sourcing and booking</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>On-camera hosting and interviews</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>Transferable if you hire internally later</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 2: Speaking -->
+          <div class="bg-white border border-cream-300/50 rounded-2xl p-8 md:p-10 card-hover group relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-lime-400/5 rounded-full blur-[60px] pointer-events-none"></div>
+            <div class="relative z-10">
+              <div class="w-14 h-14 rounded-xl bg-lime-400/15 flex items-center justify-center mb-6 group-hover:bg-lime-400/30 transition-colors">
+                <span class="material-symbols-outlined text-lime-600 text-2xl">mic</span>
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3">Speaking</h3>
+              <p class="text-cream-600 text-sm leading-relaxed mb-5">Keynotes, panels, fireside chats, and guest lectures. I speak on AI, entrepreneurship, intercultural leadership, and the psychology behind how teams and businesses grow.</p>
+              <ul class="space-y-2 text-sm text-cream-600">
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>Conferences and corporate events</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>Universities and executive programs</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>Available in five languages</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>Custom topics tailored to your audience</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 3: Workshops -->
+          <div class="bg-white border border-cream-300/50 rounded-2xl p-8 md:p-10 card-hover group relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-lime-400/5 rounded-full blur-[60px] pointer-events-none"></div>
+            <div class="relative z-10">
+              <div class="w-14 h-14 rounded-xl bg-lime-400/15 flex items-center justify-center mb-6 group-hover:bg-lime-400/30 transition-colors">
+                <span class="material-symbols-outlined text-lime-600 text-2xl">school</span>
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3">Workshops</h3>
+              <p class="text-cream-600 text-sm leading-relaxed mb-5">Hands-on sessions for teams that want to go deeper. I run workshops on AI adoption, leadership, team dynamics, and intercultural communication for companies navigating growth or change.</p>
+              <ul class="space-y-2 text-sm text-cream-600">
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>Half-day or full-day formats</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>Interactive, not lecture-style</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>AI, leadership, and culture tracks</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>In-person or virtual</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 4: Event Hosting / MC -->
+          <div class="bg-white border border-cream-300/50 rounded-2xl p-8 md:p-10 card-hover group relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-lime-400/5 rounded-full blur-[60px] pointer-events-none"></div>
+            <div class="relative z-10">
+              <div class="w-14 h-14 rounded-xl bg-lime-400/15 flex items-center justify-center mb-6 group-hover:bg-lime-400/30 transition-colors">
+                <span class="material-symbols-outlined text-lime-600 text-2xl">campaign</span>
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3">Event Hosting</h3>
+              <p class="text-cream-600 text-sm leading-relaxed mb-5">MC and moderator for conferences, panels, and corporate events. Fluent in five languages with experience leading conversations across industries and cultures.</p>
+              <ul class="space-y-2 text-sm text-cream-600">
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>Multilingual hosting (EN/FR/AR/DE/ES)</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>Panel moderation and fireside chats</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>International and multicultural events</li>
+                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-500 text-[16px] mt-0.5" style="font-variation-settings: 'FILL' 1">check_circle</span>Tech, business, and innovation verticals</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-10 fade-up" style="animation-delay: 0.2s">
+          <a href="https://calendly.com/gabriel-chouchane/30min" target="_blank" rel="noopener" class="btn-glow px-8 py-4 rounded-xl font-bold text-base inline-block">Book a Call</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CONTACT -->
+    <!-- ============================================ -->
+    <section id="contact" class="bg-dark-800 text-white py-20 md:py-28 relative overflow-hidden">
+      <!-- Sound waveform background -->
+      <div class="waveform-container">
+        <svg class="waveform-layer-1" viewBox="0 0 2400 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="waveform-line" stroke="#a6e505" stroke-width="2" opacity="0.15"
+            d="M0,400 C50,400 75,320 100,320 C125,320 150,400 200,400 C250,400 275,460 300,460 C325,460 350,400 400,400 C450,400 475,340 500,340 C525,340 550,400 600,400 C650,400 675,450 700,450 C725,450 750,400 800,400 C850,400 875,330 900,330 C925,330 950,400 1000,400 C1050,400 1075,460 1100,460 C1125,460 1150,400 1200,400 C1250,400 1275,320 1300,320 C1325,320 1350,400 1400,400 C1450,400 1475,460 1500,460 C1525,460 1550,400 1600,400 C1650,400 1675,340 1700,340 C1725,340 1750,400 1800,400 C1850,400 1875,450 1900,450 C1925,450 1950,400 2000,400 C2050,400 2075,330 2100,330 C2125,330 2150,400 2200,400 C2250,400 2275,460 2300,460 C2325,460 2350,400 2400,400" />
+          <path class="waveform-line" stroke="#a6e505" stroke-width="1" opacity="0.08"
+            d="M0,400 C30,400 45,360 60,360 C75,360 90,400 120,400 C150,400 165,435 180,435 C195,435 210,400 240,400 C270,400 285,370 300,370 C315,370 330,400 360,400 C390,400 405,425 420,425 C435,425 450,400 480,400 C510,400 525,365 540,365 C555,365 570,400 600,400 C630,400 645,430 660,430 C675,430 690,400 720,400 C750,400 765,360 780,360 C795,360 810,400 840,400 C870,400 885,435 900,435 C915,435 930,400 960,400 C990,400 1005,370 1020,370 C1035,370 1050,400 1080,400 C1110,400 1125,425 1140,425 C1155,425 1170,400 1200,400 C1230,400 1245,360 1260,360 C1275,360 1290,400 1320,400 C1350,400 1365,435 1380,435 C1395,435 1410,400 1440,400 C1470,400 1485,370 1500,370 C1515,370 1530,400 1560,400 C1590,400 1605,425 1620,425 C1635,425 1650,400 1680,400 C1710,400 1725,365 1740,365 C1755,365 1770,400 1800,400 C1830,400 1845,430 1860,430 C1875,430 1890,400 1920,400 C1950,400 1965,360 1980,360 C1995,360 2010,400 2040,400 C2070,400 2085,435 2100,435 C2115,435 2130,400 2160,400 C2190,400 2205,370 2220,370 C2235,370 2250,400 2280,400 C2310,400 2325,425 2340,425 C2355,425 2370,400 2400,400" />
+        </svg>
+        <svg class="waveform-layer-2" viewBox="0 0 2400 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="waveform-line" stroke="#a6e505" stroke-width="1.5" opacity="0.1"
+            d="M0,380 C60,380 90,300 120,300 C150,300 180,380 240,380 C300,380 330,470 360,470 C390,470 420,380 480,380 C540,380 570,310 600,310 C630,310 660,380 720,380 C780,380 810,460 840,460 C870,460 900,380 960,380 C1020,380 1050,290 1080,290 C1110,290 1140,380 1200,380 C1260,380 1290,470 1320,470 C1350,470 1380,380 1440,380 C1500,380 1530,310 1560,310 C1590,310 1620,380 1680,380 C1740,380 1770,460 1800,460 C1830,460 1860,380 1920,380 C1980,380 2010,300 2040,300 C2070,300 2100,380 2160,380 C2220,380 2250,470 2280,470 C2310,470 2340,380 2400,380" />
+        </svg>
+        <svg class="waveform-layer-3" viewBox="0 0 2400 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="waveform-line" stroke="#a6e505" stroke-width="1" opacity="0.06"
+            d="M0,420 C100,420 150,340 200,340 C250,340 300,420 400,420 C500,420 550,490 600,490 C650,490 700,420 800,420 C900,420 950,330 1000,330 C1050,330 1100,420 1200,420 C1300,420 1350,490 1400,490 C1450,490 1500,420 1600,420 C1700,420 1750,340 1800,340 C1850,340 1900,420 2000,420 C2100,420 2150,490 2200,490 C2250,490 2300,420 2400,420" />
+          <path class="waveform-line" stroke="#a6e505" stroke-width="1" opacity="0.1" stroke-dasharray="3 20"
+            d="M0,400 L2400,400" />
+        </svg>
+      </div>
+      <div class="absolute top-0 left-1/4 w-96 h-96 bg-lime-500/5 rounded-full blur-[120px] pointer-events-none"></div>
+      <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-lime-500/3 rounded-full blur-[100px] pointer-events-none"></div>
+      <div class="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
+        <div class="max-w-2xl mx-auto text-center fade-up">
+          <h2 class="font-display text-4xl md:text-5xl font-extrabold tracking-tight mb-5">Let's Work Together</h2>
+          <p class="text-white/50 text-lg leading-relaxed mb-10">Looking for a speaker, a podcast host for your company, or a conversation about AI strategy? Book a call and let's figure out the right fit.</p>
+          <a href="https://calendly.com/gabriel-chouchane/30min" target="_blank" rel="noopener" class="btn-glow px-10 py-4 rounded-xl font-bold text-lg inline-block">Book a Call</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================ -->
+  <footer class="bg-cream-200 py-10">
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-6 md:px-10 gap-4">
+      <p class="text-sm text-cream-600 tracking-wide">
+        &copy; 2026 Gabriel Chouchane. All rights reserved.
+      </p>
+      <div class="flex gap-6">
+        <a href="https://www.linkedin.com/in/gabriel-chouchane-89735688/" class="text-sm text-cream-600 hover:text-lime-600 transition-colors font-medium" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.youtube.com/@DayDevs" class="text-sm text-cream-600 hover:text-lime-600 transition-colors font-medium" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================ -->
+  <!-- JAVASCRIPT -->
+  <!-- ============================================ -->
+  <script>
+    // =============================================
+    // CONFIG — Update your content here
+    // =============================================
+    const SHORTS = [
+      { id: 'RzQ3XRPTex0', title: 'Short #1', category: 'AI Strategy' },
+      { id: '1k0N5Hdpggw', title: 'Short #2', category: 'Building' },
+      { id: '5QDem_bReLU', title: 'Short #3', category: 'Speaking' },
+      { id: 'A0bErJwQjX8', title: 'Short #4', category: 'Productivity' },
+      { id: 'Z8_0LSLuJMg', title: 'Short #5', category: 'Innovation' },
+    ];
+
+    const LONG_FORM = [
+      { id: 'mOnFp4GFsHE', title: 'Deep Dive with Amazon' },
+      { id: '9pdnl0bmIrk', title: 'Scaling Teams with TripAdvisor' },
+      { id: 'TOAVD8MInak', title: 'Leadership with Diddo' },
+      { id: '-89N0z4ZyUE', title: 'Software Innovation with Fitch Group' },
+      { id: 'w0O9gTOujRQ', title: 'Leveraging AI with Cold IQ' },
+      { id: 'e1f6YXOp9gc', title: 'Entrepreneurship and AI Lecture at OTH University' },
+    ];
+
+    // =============================================
+    // NAV — Scroll effect + mobile menu
+    // =============================================
+    const navbar = document.getElementById('navbar');
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    let menuOpen = false;
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 30);
+    });
+
+    menuToggle.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      mobileMenu.classList.toggle('open', menuOpen);
+      menuToggle.querySelector('.material-symbols-outlined').textContent = menuOpen ? 'close' : 'menu';
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menuOpen = false;
+        mobileMenu.classList.remove('open');
+        menuToggle.querySelector('.material-symbols-outlined').textContent = 'menu';
+      });
+    });
+
+    // =============================================
+    // CAROUSEL — Touch + button navigation
+    // =============================================
+    const track = document.getElementById('carousel-track');
+    const prevBtn = document.getElementById('carousel-prev');
+    const nextBtn = document.getElementById('carousel-next');
+    const dotsContainer = document.getElementById('carousel-dots');
+
+    let currentSlide = 0;
+    let isDragging = false;
+    let startX = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+
+    function getSlideWidth() {
+      const card = track.children[0];
+      if (!card) return 300;
+      const style = window.getComputedStyle(track);
+      const gap = parseFloat(style.gap) || 20;
+      return card.offsetWidth + gap;
+    }
+
+    function getVisibleCount() {
+      const containerWidth = track.parentElement.offsetWidth;
+      return Math.max(1, Math.floor(containerWidth / getSlideWidth()));
+    }
+
+    function getMaxSlide() {
+      return Math.max(0, track.children.length - getVisibleCount());
+    }
+
+    function goToSlide(index) {
+      currentSlide = Math.max(0, Math.min(index, getMaxSlide()));
+      const offset = currentSlide * getSlideWidth();
+      track.style.transform = `translateX(-${offset}px)`;
+      currentTranslate = -offset;
+      prevTranslate = currentTranslate;
+      updateDots();
+    }
+
+    function buildDots() {
+      dotsContainer.innerHTML = '';
+      const total = getMaxSlide() + 1;
+      for (let i = 0; i < total; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'dot' + (i === currentSlide ? ' active' : '');
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function updateDots() {
+      dotsContainer.querySelectorAll('.dot').forEach((d, i) => {
+        d.classList.toggle('active', i === currentSlide);
+      });
+    }
+
+    prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+    nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+
+    // Touch / pointer drag
+    track.addEventListener('pointerdown', (e) => {
+      isDragging = true;
+      startX = e.clientX;
+      track.classList.add('dragging');
+      track.setPointerCapture(e.pointerId);
+    });
+
+    track.addEventListener('pointermove', (e) => {
+      if (!isDragging) return;
+      const diff = e.clientX - startX;
+      track.style.transform = `translateX(${prevTranslate + diff}px)`;
+      currentTranslate = prevTranslate + diff;
+    });
+
+    track.addEventListener('pointerup', (e) => {
+      if (!isDragging) return;
+      isDragging = false;
+      track.classList.remove('dragging');
+      const diff = currentTranslate - prevTranslate;
+      const threshold = getSlideWidth() / 4;
+      if (diff < -threshold) goToSlide(currentSlide + 1);
+      else if (diff > threshold) goToSlide(currentSlide - 1);
+      else goToSlide(currentSlide);
+    });
+
+    // Prevent link/image drag interference
+    track.addEventListener('dragstart', (e) => e.preventDefault());
+
+    // Init + resize
+    function initCarousel() {
+      buildDots();
+      goToSlide(currentSlide);
+    }
+    window.addEventListener('resize', initCarousel);
+    initCarousel();
+
+    // Auto-advance carousel every 4s, pause on hover/drag
+    let autoPlayInterval = null;
+    function startAutoPlay() {
+      stopAutoPlay();
+      autoPlayInterval = setInterval(() => {
+        if (currentSlide >= getMaxSlide()) goToSlide(0);
+        else goToSlide(currentSlide + 1);
+      }, 4000);
+    }
+    function stopAutoPlay() {
+      if (autoPlayInterval) clearInterval(autoPlayInterval);
+    }
+
+    const carouselContainer = document.getElementById('carousel-container');
+    carouselContainer.addEventListener('pointerenter', stopAutoPlay);
+    carouselContainer.addEventListener('pointerleave', startAutoPlay);
+    startAutoPlay();
+
+    // =============================================
+    // DEEP DIVE CARDS
+    // =============================================
+    const deepDiveCards = document.querySelectorAll('.deep-dive-card');
+    const deepDiveIframe = document.getElementById('deep-dive-iframe');
+    const deepDiveTitle = document.getElementById('deep-dive-title');
+    const deepDiveYtLink = document.getElementById('deep-dive-yt-link');
+    const deepDivePlayer = document.getElementById('deep-dive-player');
+
+    deepDiveCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const videoId = card.dataset.videoId;
+        const title = card.dataset.title;
+        deepDiveIframe.src = `https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&origin=https://www.youtube.com`;
+        deepDiveTitle.textContent = title;
+        deepDiveYtLink.href = `https://www.youtube.com/watch?v=${videoId}`;
+        deepDiveCards.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+        // Scroll active card into view within sidebar
+        card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    });
+
+    // =============================================
+    // SCROLL REVEAL
+    // =============================================
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    fadeEls.forEach(el => revealObserver.observe(el));
+
+    // =============================================
+    // KEYBOARD CAROUSEL CONTROL
+    // =============================================
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') goToSlide(currentSlide - 1);
+      if (e.key === 'ArrowRight') goToSlide(currentSlide + 1);
+    });
+
+    // =============================================
+    // PAST EVENTS SLIDER
+    // =============================================
+    const eventsTrack = document.getElementById('events-track');
+    const eventsPrev = document.getElementById('events-prev');
+    const eventsNext = document.getElementById('events-next');
+    let eventsSlide = 0;
+
+    function getEventCardWidth() {
+      const card = eventsTrack.children[0];
+      if (!card) return 340;
+      const gap = 20; // gap-5 = 1.25rem = 20px
+      return card.offsetWidth + gap;
+    }
+
+    function getEventsMaxSlide() {
+      const containerWidth = eventsTrack.parentElement.offsetWidth;
+      const visible = Math.max(1, Math.floor(containerWidth / getEventCardWidth()));
+      return Math.max(0, eventsTrack.children.length - visible);
+    }
+
+    function goToEvent(index) {
+      eventsSlide = Math.max(0, Math.min(index, getEventsMaxSlide()));
+      eventsTrack.style.transform = `translateX(-${eventsSlide * getEventCardWidth()}px)`;
+    }
+
+    eventsPrev.addEventListener('click', () => goToEvent(eventsSlide - 1));
+    eventsNext.addEventListener('click', () => goToEvent(eventsSlide + 1));
+    window.addEventListener('resize', () => goToEvent(eventsSlide));
+
+    // =============================================
+    // CLICK-TO-PLAY SHORTS
+    // =============================================
+    document.querySelectorAll('.short-video').forEach(container => {
+      // Prevent carousel drag from swallowing clicks on videos
+      container.addEventListener('pointerdown', (e) => {
+        e.stopPropagation();
+      });
+
+      container.addEventListener('click', () => {
+        if (container.querySelector('iframe')) return; // Already playing
+        const videoId = container.dataset.videoId;
+        // Remove thumbnail, overlay, and label
+        const thumb = container.querySelector('.short-thumb');
+        const overlay = container.querySelector('.short-overlay');
+        const label = container.querySelector('.short-label');
+        if (thumb) thumb.remove();
+        if (overlay) overlay.remove();
+        if (label) label.remove();
+        // Inject iframe
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1&origin=https://www.youtube.com`;
+        iframe.title = 'YouTube Short';
+        iframe.frameBorder = '0';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        iframe.className = 'w-full h-full absolute inset-0';
+        container.appendChild(iframe);
+        container.classList.remove('cursor-pointer');
+        // Pause auto-advance while watching
+        stopAutoPlay();
+      });
+    });
+  </script>
+
+</body>
+</html>
