@@ -910,7 +910,7 @@
             </div>
           </div>
           <div class="overflow-hidden">
-            <div id="events-track" class="flex gap-5 transition-transform duration-500 ease-out">
+            <div id="events-track" class="flex gap-5 transition-transform duration-500 ease-out cursor-grab active:cursor-grabbing">
 
               <!-- Event 1: United Nations -->
               <div class="flex-none w-80 md:w-88 rounded-xl overflow-hidden event-card group" style="width: 22rem;">
@@ -1359,6 +1359,47 @@
     eventsPrev.addEventListener('click', () => goToEvent(eventsSlide - 1));
     eventsNext.addEventListener('click', () => goToEvent(eventsSlide + 1));
     window.addEventListener('resize', () => goToEvent(eventsSlide));
+
+    // Touch / pointer drag for events
+    let eventsDragging = false;
+    let eventsStartX = 0;
+    let eventsCurrentTranslate = 0;
+    let eventsPrevTranslate = 0;
+
+    eventsTrack.addEventListener('pointerdown', (e) => {
+      eventsDragging = true;
+      eventsStartX = e.clientX;
+      eventsTrack.style.transition = 'none';
+      eventsTrack.setPointerCapture(e.pointerId);
+    });
+
+    eventsTrack.addEventListener('pointermove', (e) => {
+      if (!eventsDragging) return;
+      const diff = e.clientX - eventsStartX;
+      eventsTrack.style.transform = `translateX(${eventsPrevTranslate + diff}px)`;
+      eventsCurrentTranslate = eventsPrevTranslate + diff;
+    });
+
+    eventsTrack.addEventListener('pointerup', (e) => {
+      if (!eventsDragging) return;
+      eventsDragging = false;
+      eventsTrack.style.transition = '';
+      const diff = eventsCurrentTranslate - eventsPrevTranslate;
+      const threshold = getEventCardWidth() / 4;
+      if (diff < -threshold) goToEvent(eventsSlide + 1);
+      else if (diff > threshold) goToEvent(eventsSlide - 1);
+      else goToEvent(eventsSlide);
+    });
+
+    eventsTrack.addEventListener('dragstart', (e) => e.preventDefault());
+
+    // Keep translate state in sync
+    const origGoToEvent = goToEvent;
+    goToEvent = function(index) {
+      origGoToEvent(index);
+      eventsPrevTranslate = -eventsSlide * getEventCardWidth();
+      eventsCurrentTranslate = eventsPrevTranslate;
+    };
 
     // =============================================
     // CLICK-TO-PLAY SHORTS
